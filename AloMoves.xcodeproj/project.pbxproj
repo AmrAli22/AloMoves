@@ -12,9 +12,13 @@
 		C582CAA4271F33B300C4F08F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C582CAA2271F33B300C4F08F /* LaunchScreen.storyboard */; };
 		C582CAB1271F35F200C4F08F /* TrainingSeries.json in Resources */ = {isa = PBXBuildFile; fileRef = C582CAB0271F35F200C4F08F /* TrainingSeries.json */; };
 		C582CAB3271F3A5500C4F08F /* ChallangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CAB2271F3A5500C4F08F /* ChallangeView.swift */; };
+		DE15FD5885D5E21732543F9A /* Pods_AloMoves.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B05FC7AFAD85771656748D1 /* Pods_AloMoves.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2093C0374F335AA02CE3CCEB /* Pods-AloMoves.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AloMoves.release.xcconfig"; path = "Target Support Files/Pods-AloMoves/Pods-AloMoves.release.xcconfig"; sourceTree = "<group>"; };
+		7B05FC7AFAD85771656748D1 /* Pods_AloMoves.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AloMoves.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AA52B8181439C7737E363E9 /* Pods-AloMoves.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AloMoves.debug.xcconfig"; path = "Target Support Files/Pods-AloMoves/Pods-AloMoves.debug.xcconfig"; sourceTree = "<group>"; };
 		C582CA94271F33AF00C4F08F /* AloMoves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AloMoves.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C582CA97271F33AF00C4F08F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C582CAA0271F33B300C4F08F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE15FD5885D5E21732543F9A /* Pods_AloMoves.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06B1D2FB6EE5B4BF3D89B09E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B05FC7AFAD85771656748D1 /* Pods_AloMoves.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		240690019BBA7283C3EB2976 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AA52B8181439C7737E363E9 /* Pods-AloMoves.debug.xcconfig */,
+				2093C0374F335AA02CE3CCEB /* Pods-AloMoves.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C582CA8B271F33AE00C4F08F = {
 			isa = PBXGroup;
 			children = (
 				C582CA96271F33AF00C4F08F /* AloMoves */,
 				C582CA95271F33AF00C4F08F /* Products */,
+				240690019BBA7283C3EB2976 /* Pods */,
+				06B1D2FB6EE5B4BF3D89B09E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C582CAA8271F33B300C4F08F /* Build configuration list for PBXNativeTarget "AloMoves" */;
 			buildPhases = (
+				2B367D2AF3AF229042CCF64B /* [CP] Check Pods Manifest.lock */,
 				C582CA90271F33AF00C4F08F /* Sources */,
 				C582CA91271F33AF00C4F08F /* Frameworks */,
 				C582CA92271F33AF00C4F08F /* Resources */,
+				4222CA532A52D94A2174229B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +187,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B367D2AF3AF229042CCF64B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AloMoves-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4222CA532A52D94A2174229B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AloMoves/Pods-AloMoves-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AloMoves/Pods-AloMoves-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AloMoves/Pods-AloMoves-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C582CA90271F33AF00C4F08F /* Sources */ = {
@@ -303,6 +372,7 @@
 		};
 		C582CAA9271F33B300C4F08F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA52B8181439C7737E363E9 /* Pods-AloMoves.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +392,7 @@
 		};
 		C582CAAA271F33B300C4F08F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2093C0374F335AA02CE3CCEB /* Pods-AloMoves.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
