@@ -13,6 +13,7 @@
 		C582CAB1271F35F200C4F08F /* TrainingSeries.json in Resources */ = {isa = PBXBuildFile; fileRef = C582CAB0271F35F200C4F08F /* TrainingSeries.json */; };
 		C582CAB3271F3A5500C4F08F /* ChallangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CAB2271F3A5500C4F08F /* ChallangeView.swift */; };
 		C582CAB6271F426C00C4F08F /* ChallangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CAB5271F426C00C4F08F /* ChallangeModel.swift */; };
+		C582CAB8271F45DA00C4F08F /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CAB7271F45DA00C4F08F /* JSONHandler.swift */; };
 		DE15FD5885D5E21732543F9A /* Pods_AloMoves.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B05FC7AFAD85771656748D1 /* Pods_AloMoves.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		C582CAB0271F35F200C4F08F /* TrainingSeries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TrainingSeries.json; sourceTree = "<group>"; };
 		C582CAB2271F3A5500C4F08F /* ChallangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallangeView.swift; sourceTree = "<group>"; };
 		C582CAB5271F426C00C4F08F /* ChallangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallangeModel.swift; sourceTree = "<group>"; };
+		C582CAB7271F45DA00C4F08F /* JSONHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				C582CAB5271F426C00C4F08F /* ChallangeModel.swift */,
+				C582CAB7271F45DA00C4F08F /* JSONHandler.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C582CAB8271F45DA00C4F08F /* JSONHandler.swift in Sources */,
 				C582CA98271F33AF00C4F08F /* AppDelegate.swift in Sources */,
 				C582CAB6271F426C00C4F08F /* ChallangeModel.swift in Sources */,
 				C582CAB3271F3A5500C4F08F /* ChallangeView.swift in Sources */,
