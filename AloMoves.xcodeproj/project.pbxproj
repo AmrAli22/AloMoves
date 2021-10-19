@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		C582CA98271F33AF00C4F08F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CA97271F33AF00C4F08F /* AppDelegate.swift */; };
 		C582CAA1271F33B300C4F08F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C582CAA0271F33B300C4F08F /* Assets.xcassets */; };
-		C582CAA4271F33B300C4F08F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C582CAA2271F33B300C4F08F /* LaunchScreen.storyboard */; };
 		C582CAB1271F35F200C4F08F /* TrainingSeries.json in Resources */ = {isa = PBXBuildFile; fileRef = C582CAB0271F35F200C4F08F /* TrainingSeries.json */; };
 		C582CAB3271F3A5500C4F08F /* ChallangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CAB2271F3A5500C4F08F /* ChallangeView.swift */; };
 		C582CAB6271F426C00C4F08F /* ChallangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CAB5271F426C00C4F08F /* ChallangeModel.swift */; };
 		C582CAB8271F45DA00C4F08F /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CAB7271F45DA00C4F08F /* JSONHandler.swift */; };
 		C582CABA271F47F900C4F08F /* ChallangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CAB9271F47F900C4F08F /* ChallangeViewModel.swift */; };
 		C582CABD271F49D300C4F08F /* ChallanegDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CABC271F49D300C4F08F /* ChallanegDataSource.swift */; };
+		C582CABF271F4E8D00C4F08F /* CahcingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CABE271F4E8D00C4F08F /* CahcingHelper.swift */; };
 		DE15FD5885D5E21732543F9A /* Pods_AloMoves.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B05FC7AFAD85771656748D1 /* Pods_AloMoves.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,6 @@
 		C582CA94271F33AF00C4F08F /* AloMoves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AloMoves.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C582CA97271F33AF00C4F08F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C582CAA0271F33B300C4F08F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C582CAA3271F33B300C4F08F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C582CAA5271F33B300C4F08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C582CAB0271F35F200C4F08F /* TrainingSeries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TrainingSeries.json; sourceTree = "<group>"; };
 		C582CAB2271F3A5500C4F08F /* ChallangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallangeView.swift; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		C582CAB7271F45DA00C4F08F /* JSONHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHandler.swift; sourceTree = "<group>"; };
 		C582CAB9271F47F900C4F08F /* ChallangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallangeViewModel.swift; sourceTree = "<group>"; };
 		C582CABC271F49D300C4F08F /* ChallanegDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallanegDataSource.swift; sourceTree = "<group>"; };
+		C582CABE271F4E8D00C4F08F /* CahcingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CahcingHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				C582CAAF271F35B700C4F08F /* FakerJSON */,
-				C582CAAE271F35A400C4F08F /* StoryBoards */,
 				C582CAAC271F341E00C4F08F /* TheChallange */,
 				C582CA97271F33AF00C4F08F /* AppDelegate.swift */,
 				C582CAA0271F33B300C4F08F /* Assets.xcassets */,
@@ -107,19 +106,13 @@
 		C582CAAC271F341E00C4F08F /* TheChallange */ = {
 			isa = PBXGroup;
 			children = (
+				C582CAC1271F574700C4F08F /* Unit-Testing */,
+				C582CAC0271F4E9200C4F08F /* HelperClasses */,
 				C582CABB271F47FE00C4F08F /* ViewModel */,
 				C582CAB4271F425B00C4F08F /* Model */,
 				C582CAAB271F341300C4F08F /* View */,
 			);
 			path = TheChallange;
-			sourceTree = "<group>";
-		};
-		C582CAAE271F35A400C4F08F /* StoryBoards */ = {
-			isa = PBXGroup;
-			children = (
-				C582CAA2271F33B300C4F08F /* LaunchScreen.storyboard */,
-			);
-			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 		C582CAAF271F35B700C4F08F /* FakerJSON */ = {
@@ -146,6 +139,21 @@
 				C582CAB9271F47F900C4F08F /* ChallangeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C582CAC0271F4E9200C4F08F /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				C582CABE271F4E8D00C4F08F /* CahcingHelper.swift */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		C582CAC1271F574700C4F08F /* Unit-Testing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Unit-Testing";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +215,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C582CAA4271F33B300C4F08F /* LaunchScreen.storyboard in Resources */,
 				C582CAA1271F33B300C4F08F /* Assets.xcassets in Resources */,
 				C582CAB1271F35F200C4F08F /* TrainingSeries.json in Resources */,
 			);
@@ -268,21 +275,11 @@
 				C582CABA271F47F900C4F08F /* ChallangeViewModel.swift in Sources */,
 				C582CABD271F49D300C4F08F /* ChallanegDataSource.swift in Sources */,
 				C582CAB3271F3A5500C4F08F /* ChallangeView.swift in Sources */,
+				C582CABF271F4E8D00C4F08F /* CahcingHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C582CAA2271F33B300C4F08F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C582CAA3271F33B300C4F08F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C582CAA6271F33B300C4F08F /* Debug */ = {

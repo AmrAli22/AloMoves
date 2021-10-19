@@ -9,12 +9,21 @@ import Foundation
 struct challangeDataSource {
     func fetchChallange(completion: @escaping (_ challange: ChallanegModel?, _ message: String?) -> ()) {
         
-        let challange  = Bundle.main.decode(ChallanegModel.self, from: "EpicHome.json")
+        let cahceHelper = cacheHelper.shared
         
-        if let retrivedChallange = challange {
-            completion(retrivedChallange, nil)
-        }else{
-            completion(nil, "error")
+        cahceHelper.retriveFromCache(key: "cahcedIDKey")
+        { (challange, IschallangeExsit) in
+            if IschallangeExsit {
+                completion(challange, nil)
+            }else{
+                let challange  = Bundle.main.decode(ChallanegModel.self, from: "TrainingSeries.json")
+                if let retrivedChallange = challange {
+                    cahceHelper.saveAtCache(challane: ChallangeStructHolder(challange: retrivedChallange), idKey: "cahcedIDKey")
+                    completion(retrivedChallange, nil)
+                }else{
+                    completion(nil, "error")
+                }
+            }
         }
     }
 }
