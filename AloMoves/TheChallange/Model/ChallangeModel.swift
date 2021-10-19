@@ -9,7 +9,7 @@ import Foundation
 
 struct ChallanegModel : Decodable{
     var challangeName, instractors , cover: String?
-    var details: DetailsModel
+    var details: DetailsModel?
     }
 
 

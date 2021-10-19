@@ -14,20 +14,21 @@ protocol ChallangeViewDelegate: AnyObject {
     func hideSpinner()
 }
 
-class HomeViewModel : NSObject {
+class ChallangeViewModel : NSObject {
     
-   private var challange : ChallanegModel?
+    var challange : ChallanegModel?
    private var view : ChallangeViewDelegate
-   private var dataSource = challangeDataSource()
+    private var dataSource : DataSource?
     
-    init(view:ChallangeViewDelegate) {
+    init(view:ChallangeViewDelegate, dataSource : DataSource) {
         self.view = view
+        self.dataSource = dataSource
         super.init()
     }
     
     func getChallange(){
         view.showSpinner()
-        dataSource.fetchChallange { [weak self] (challange, msg) in
+        dataSource?.fetchChallange { [weak self] (challange, msg) in
             guard let self = self else { return }
             self.view.hideSpinner()
             if let message = msg {

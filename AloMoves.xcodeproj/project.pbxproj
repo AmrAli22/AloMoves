@@ -16,8 +16,19 @@
 		C582CABA271F47F900C4F08F /* ChallangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CAB9271F47F900C4F08F /* ChallangeViewModel.swift */; };
 		C582CABD271F49D300C4F08F /* ChallanegDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CABC271F49D300C4F08F /* ChallanegDataSource.swift */; };
 		C582CABF271F4E8D00C4F08F /* CahcingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CABE271F4E8D00C4F08F /* CahcingHelper.swift */; };
+		C582CACB271F588B00C4F08F /* AloMovesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CACA271F588B00C4F08F /* AloMovesTests.swift */; };
 		DE15FD5885D5E21732543F9A /* Pods_AloMoves.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B05FC7AFAD85771656748D1 /* Pods_AloMoves.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C582CACD271F588B00C4F08F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C582CA8C271F33AE00C4F08F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C582CA93271F33AF00C4F08F;
+			remoteInfo = AloMoves;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2093C0374F335AA02CE3CCEB /* Pods-AloMoves.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AloMoves.release.xcconfig"; path = "Target Support Files/Pods-AloMoves/Pods-AloMoves.release.xcconfig"; sourceTree = "<group>"; };
@@ -34,6 +45,9 @@
 		C582CAB9271F47F900C4F08F /* ChallangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallangeViewModel.swift; sourceTree = "<group>"; };
 		C582CABC271F49D300C4F08F /* ChallanegDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallanegDataSource.swift; sourceTree = "<group>"; };
 		C582CABE271F4E8D00C4F08F /* CahcingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CahcingHelper.swift; sourceTree = "<group>"; };
+		C582CAC8271F588B00C4F08F /* AloMovesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AloMovesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C582CACA271F588B00C4F08F /* AloMovesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AloMovesTests.swift; sourceTree = "<group>"; };
+		C582CACC271F588B00C4F08F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +56,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE15FD5885D5E21732543F9A /* Pods_AloMoves.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C582CAC5271F588B00C4F08F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				C582CA94271F33AF00C4F08F /* AloMoves.app */,
+				C582CAC8271F588B00C4F08F /* AloMovesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,7 +128,7 @@
 		C582CAAC271F341E00C4F08F /* TheChallange */ = {
 			isa = PBXGroup;
 			children = (
-				C582CAC1271F574700C4F08F /* Unit-Testing */,
+				C582CAC9271F588B00C4F08F /* AloMovesTests */,
 				C582CAC0271F4E9200C4F08F /* HelperClasses */,
 				C582CABB271F47FE00C4F08F /* ViewModel */,
 				C582CAB4271F425B00C4F08F /* Model */,
@@ -149,11 +171,13 @@
 			path = HelperClasses;
 			sourceTree = "<group>";
 		};
-		C582CAC1271F574700C4F08F /* Unit-Testing */ = {
+		C582CAC9271F588B00C4F08F /* AloMovesTests */ = {
 			isa = PBXGroup;
 			children = (
+				C582CACA271F588B00C4F08F /* AloMovesTests.swift */,
+				C582CACC271F588B00C4F08F /* Info.plist */,
 			);
-			path = "Unit-Testing";
+			path = AloMovesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +202,24 @@
 			productReference = C582CA94271F33AF00C4F08F /* AloMoves.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C582CAC7271F588B00C4F08F /* AloMovesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C582CACF271F588B00C4F08F /* Build configuration list for PBXNativeTarget "AloMovesTests" */;
+			buildPhases = (
+				C582CAC4271F588B00C4F08F /* Sources */,
+				C582CAC5271F588B00C4F08F /* Frameworks */,
+				C582CAC6271F588B00C4F08F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C582CACE271F588B00C4F08F /* PBXTargetDependency */,
+			);
+			name = AloMovesTests;
+			productName = AloMovesTests;
+			productReference = C582CAC8271F588B00C4F08F /* AloMovesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,6 +231,10 @@
 				TargetAttributes = {
 					C582CA93271F33AF00C4F08F = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					C582CAC7271F588B00C4F08F = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = C582CA93271F33AF00C4F08F;
 					};
 				};
 			};
@@ -206,6 +252,7 @@
 			projectRoot = "";
 			targets = (
 				C582CA93271F33AF00C4F08F /* AloMoves */,
+				C582CAC7271F588B00C4F08F /* AloMovesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +264,13 @@
 			files = (
 				C582CAA1271F33B300C4F08F /* Assets.xcassets in Resources */,
 				C582CAB1271F35F200C4F08F /* TrainingSeries.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C582CAC6271F588B00C4F08F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +333,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C582CAC4271F588B00C4F08F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C582CACB271F588B00C4F08F /* AloMovesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C582CACE271F588B00C4F08F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C582CA93271F33AF00C4F08F /* AloMoves */;
+			targetProxy = C582CACD271F588B00C4F08F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C582CAA6271F33B300C4F08F /* Debug */ = {
@@ -438,6 +508,48 @@
 			};
 			name = Release;
 		};
+		C582CAD0271F588B00C4F08F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X43UT553Y2;
+				INFOPLIST_FILE = AloMovesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = amr.ali.AloMoves.AloMovesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AloMoves.app/AloMoves";
+			};
+			name = Debug;
+		};
+		C582CAD1271F588B00C4F08F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X43UT553Y2;
+				INFOPLIST_FILE = AloMovesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = amr.ali.AloMoves.AloMovesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AloMoves.app/AloMoves";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -455,6 +567,15 @@
 			buildConfigurations = (
 				C582CAA9271F33B300C4F08F /* Debug */,
 				C582CAAA271F33B300C4F08F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C582CACF271F588B00C4F08F /* Build configuration list for PBXNativeTarget "AloMovesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C582CAD0271F588B00C4F08F /* Debug */,
+				C582CAD1271F588B00C4F08F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

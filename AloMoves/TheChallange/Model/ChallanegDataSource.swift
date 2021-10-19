@@ -6,7 +6,11 @@
 //
 
 import Foundation
-struct challangeDataSource {
+protocol DataSource {
+    func fetchChallange(completion: @escaping (_ challange: ChallanegModel?, _ message: String?) -> ())
+}
+
+class challangeDataSource : DataSource {
     func fetchChallange(completion: @escaping (_ challange: ChallanegModel?, _ message: String?) -> ()) {
         
         let cahceHelper = cacheHelper.shared
