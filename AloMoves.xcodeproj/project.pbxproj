@@ -14,6 +14,8 @@
 		C582CAB3271F3A5500C4F08F /* ChallangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CAB2271F3A5500C4F08F /* ChallangeView.swift */; };
 		C582CAB6271F426C00C4F08F /* ChallangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CAB5271F426C00C4F08F /* ChallangeModel.swift */; };
 		C582CAB8271F45DA00C4F08F /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CAB7271F45DA00C4F08F /* JSONHandler.swift */; };
+		C582CABA271F47F900C4F08F /* ChallangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CAB9271F47F900C4F08F /* ChallangeViewModel.swift */; };
+		C582CABD271F49D300C4F08F /* ChallanegDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C582CABC271F49D300C4F08F /* ChallanegDataSource.swift */; };
 		DE15FD5885D5E21732543F9A /* Pods_AloMoves.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B05FC7AFAD85771656748D1 /* Pods_AloMoves.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +32,8 @@
 		C582CAB2271F3A5500C4F08F /* ChallangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallangeView.swift; sourceTree = "<group>"; };
 		C582CAB5271F426C00C4F08F /* ChallangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallangeModel.swift; sourceTree = "<group>"; };
 		C582CAB7271F45DA00C4F08F /* JSONHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHandler.swift; sourceTree = "<group>"; };
+		C582CAB9271F47F900C4F08F /* ChallangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallangeViewModel.swift; sourceTree = "<group>"; };
+		C582CABC271F49D300C4F08F /* ChallanegDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallanegDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		C582CAAC271F341E00C4F08F /* TheChallange */ = {
 			isa = PBXGroup;
 			children = (
+				C582CABB271F47FE00C4F08F /* ViewModel */,
 				C582CAB4271F425B00C4F08F /* Model */,
 				C582CAAB271F341300C4F08F /* View */,
 			);
@@ -130,8 +135,17 @@
 			children = (
 				C582CAB5271F426C00C4F08F /* ChallangeModel.swift */,
 				C582CAB7271F45DA00C4F08F /* JSONHandler.swift */,
+				C582CABC271F49D300C4F08F /* ChallanegDataSource.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C582CABB271F47FE00C4F08F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C582CAB9271F47F900C4F08F /* ChallangeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +265,8 @@
 				C582CAB8271F45DA00C4F08F /* JSONHandler.swift in Sources */,
 				C582CA98271F33AF00C4F08F /* AppDelegate.swift in Sources */,
 				C582CAB6271F426C00C4F08F /* ChallangeModel.swift in Sources */,
+				C582CABA271F47F900C4F08F /* ChallangeViewModel.swift in Sources */,
+				C582CABD271F49D300C4F08F /* ChallanegDataSource.swift in Sources */,
 				C582CAB3271F3A5500C4F08F /* ChallangeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
