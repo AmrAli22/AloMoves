@@ -1,0 +1,32 @@
+{
+    "challangeName": "The Challange",
+    "instractors": "Josh Kramer",
+    "cover": "",
+    "details" : {
+        "overView": {
+            "id": 0,
+            "type": "overView",
+            "about": "Fitness means different things to different people and Health has something for everyone, whether you're just getting started with a workout routine or have been training since before TikTok was a thing. Get our latest expert moves, pro-tips, and recommendations for who to follow.",
+            "instractors" : [
+                {
+                    "id" : 0,
+                    "Name" : "Josh Kramer",
+                    "desc" : "Josh Kramer is a fitness model, personal trainer, celebrity figure and entrepreneur. He was born in Sofia, Bulgaria in 1984. Before becoming a fitness icon, he was a professional basketball player. At the age of 16 he made the junior national team and soon he was the leading scorer of his pro teams in the National Basketball Association of Bulgaria. At the age of 18 he spent an year and a half in the Army, where he found bodybuilding."
+                }
+            ]
+        },
+        "classes" : [
+        {
+           "name" : "INTRO"
+           "image" : ""
+        },
+        {
+            "name" : "INTRO"
+            "image" : ""
+        }
+      ],
+        "commuinty" : [
+        ]
+    }
+}
+
